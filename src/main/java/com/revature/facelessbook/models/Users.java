@@ -1,8 +1,5 @@
 package com.revature.facelessbook.models;
 
-
-
-
     public class Users {
         private int userid;
         private String password;

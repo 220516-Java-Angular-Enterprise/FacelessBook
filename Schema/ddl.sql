@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS friendShips;
+DROP TABLE IF EXISTS friends;
+DROP TABLE IF EXISTS users;
+
 create table users(
 	userID SERIAL not null  primary key,
 	username varchar not null,
@@ -21,5 +25,5 @@ create table friendShips(
 	primary key(userID, friendID)
 );
 
-alter table friendShips add constraint fk_u_id foreign key (userID) references users(userID)
-alter table friendShips add constraint fk_f_id foreign key (friendID) references friends(friendID)
+alter table friendShips add constraint fk_u_id foreign key (userID) references users(userID);
+alter table friendShips add constraint fk_f_id foreign key (friendID) references friends(friendID);

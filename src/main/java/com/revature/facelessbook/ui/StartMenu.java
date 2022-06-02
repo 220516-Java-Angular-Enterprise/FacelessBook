@@ -17,10 +17,10 @@ public class StartMenu implements IMenu{
 
                 switch(input){
                     case "1":
-                        login();
+                        //login();
                         break;
                     case "2":
-                        signup();
+                        //signup();
                         break;
                     case "x":
                         break exit;
@@ -42,6 +42,23 @@ public class StartMenu implements IMenu{
 
     private void login() {
 
+<<<<<<< HEAD
+        Scanner scan = new Scanner(System.in);
+        String username;
+        String password;
+
+        System.out.println("Welcome to the sign up menu");
+
+
+    }
+
+
+
+
+}
+
+
+=======
     }
 
     private void signup() {
@@ -96,3 +113,4 @@ public class StartMenu implements IMenu{
         }
     }
 }
+>>>>>>> 95788564c5fae20ebdf5422f6880e7c6ea472ef6

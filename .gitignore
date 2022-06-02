@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+*.idea
+FacelessBook.iml
+pom.xml
+=======
 *.idea/
 *.iml
 *out/
 *target/
+>>>>>>> 95788564c5fae20ebdf5422f6880e7c6ea472ef6

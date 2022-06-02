@@ -41,53 +41,58 @@ public class StartMenu implements IMenu{
 
 
     private void login() {
+
     }
 
-    private void signup(){
+    private void signup() {
         String username;
         String password;
         Scanner scan = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.println("\nCreate Account!");
-            completeExit:{
-                while (true){
+            completeExit:
+            {
+                while (true) {
                     System.out.print("\nUsername: ");
                     username = scan.nextLine();
                 }
-                while (true) {
-                    while (true) {
-                        System.out.print("\nPassword ");
-                        password = scan.nextLine();
-                    }
-                    confirmExit:
-                    {
-                        while(true){
-                            System.out.println("\nPlease confirm your credentials are correct!");
-                            System.out.println("Username: " + username);
-                            System.out.println("Password: " + password);
-                            System.out.println("Enter: (y/n)");
-                            String input = scan.nextLine();
+//                while (true) {
+//                    while (true) {
+//                        System.out.print("\nPassword ");
+//                        password = scan.nextLine();
+//                    }
+//                    confirmExit:
+//                    {
+//                        while(true){
+//                            System.out.println("\nPlease confirm your credentials are correct!");
+//                            System.out.println("Username: " + username);
+//                            System.out.println("Password: " + password);
+//                            System.out.println("Enter: (y/n)");
+//                            String input = scan.nextLine();
+//
+//                            switch (input){
+//                                case "y":
+//                                    new MainMenu().start();
+//                                    break completeExit;
+//                                case "n":
+//                                    break completeExit;
+//                                default:
+//                                    System.out.println("Invalid input!");
+//                                    break confirmExit;
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+//        }
+                //}
 
-                            switch (input){
-                                case "y":
-                                    new MainMenu().start();
-                                    break completeExit;
-                                case "n":
-                                    break completeExit;
-                                default:
-                                    System.out.println("Invalid input!");
-                                    break confirmExit;
-                            }
-                        }
-                    }
-                }
+
             }
+
 
         }
     }
-
-
 }
-
-

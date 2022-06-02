@@ -9,11 +9,11 @@ create table users(
 	state varchar not null
 );
 
+create type status as enum('pending','friends','blocked','notFriends');
 create table friends(
 	friendID SERIAL not null primary key,
-	status int default 0
+	status status default 'notFriends'
 );
-
 
 create table friendShips(
 	userID serial not null,

@@ -1,7 +1,6 @@
-package com.revature.daos;
+package com.revature.facelessbook.daos;
 
 import com.revature.database.DatabaseConnection;
-import sun.swing.BakedArrayList;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

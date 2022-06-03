@@ -4,10 +4,10 @@ import com.revature.facelessbook.daos.UserDAO;
 import com.revature.facelessbook.util.CustomException.ValidationException;
 
 public class UserService {
-    private UserDAO mUserDao;
+    private final UserDAO mUserDAO;
 
     public UserService(UserDAO uDAO) {
-        mUserDao = uDAO;
+        mUserDAO = uDAO;
     }
 
     public boolean isValidPassword(String pass) {
@@ -23,7 +23,7 @@ public class UserService {
     }
 
     public boolean isDuplicateUsername(String name) {
-        if(false/*mUserDAO query for usernames and is present*/)
+        if(mUserDAO != null)
             throw new ValidationException("existing username");
         return false;
     }
